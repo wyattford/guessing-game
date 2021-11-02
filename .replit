@@ -1,0 +1,5 @@
+  
+  
+  run = "rm *.class; javac GuessingGame.java; java GuessingGame"
+  
+  language="java"
