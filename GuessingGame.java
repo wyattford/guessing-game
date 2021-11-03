@@ -2,13 +2,12 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.DecimalFormat;
 
 
 class GuessingGame {
   public static final Integer MIN = 0;
   public static final Integer MAX = 101;
-  public static final String HAIKU = "I'm very tired\nI do not want to be here\nWhen does this class end";
+  public static final String HAIKU = "I'm very tired\nI do not want to be here\nWhen does this class end?";
 
   public static void main(String[] args) {
     manageGame();
@@ -31,7 +30,6 @@ class GuessingGame {
   }
 
   public static void getStats(Hashtable games) {
-    DecimalFormat df = new DecimalFormat("###.#");
     int totalGuesses = sumGameGuesses(games);
     System.out.println("Overall results:");
     System.out.printf("Total games   = %d%n", games.size());
